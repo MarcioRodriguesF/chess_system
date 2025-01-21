@@ -51,6 +51,7 @@ public class Board {
 		}
 		if (piece(position) == null) {
 			return null;
+
 		}
 		Piece aux = piece(position);
 		aux.position = null;
@@ -64,7 +65,8 @@ public class Board {
 	}
 	
 	public boolean positionExists(Position position) {
-		return positionExists(position.getRow(), position.getColumn());
+		boolean b = positionExists(position.getRow(), position.getColumn());
+		return b;
 	}
 	
 	public boolean thereIsAPiece(Position position) {
